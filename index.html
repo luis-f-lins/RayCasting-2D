@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.min.js"></script> 
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.dom.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.sound.min.js"></script>
+      <link rel="stylesheet" href="style.css" media="screen">
+      
+  </head>
+  <body>
+      <h1>Welcome to the ShapeMaker!</h1>
+      <div align="center">
+                <input type="button" name="option" value="Polygons" onclick="draw1();"/>
+                <input type="button" name="option" value="Rays" onclick="draw2();"/>
+                <input type="button" name="option" value="Edit Vertices and Rays" onclick="draw3();"/>
+                <input type="button" name="option" value="Clear All" onclick="clearall();"/>
+          
+         <br><br>  
+        <label name="color">What background color do you want?</label>
+             <select name="color" id="color" onchange="setColor();">
+                <option value="MidnightBlue">Blue</option>
+                <option value="DarkRed">Red</option>
+                 <option value="purple">Purple</option>
+                 <option value="gold">Yellow</option>
+                 <option value="green">Green</option>
+                 <option value="grey">Grey</option>
+                 <option value="DarkOrange">Orange</option>
+            </select>
+          <br><br>
+          
+          <span id="debug"></span>
+          
+      <script src="sketch.js"></script>     
+          <div id="sketch"></div>
+          </div>
+      
+      
+  </body>
+</html>
